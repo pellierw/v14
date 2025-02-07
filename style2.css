@@ -1,0 +1,489 @@
+@font-face {
+    src: url(MonomakhUnicode.otf);
+    font-family: 'Monomakh';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monomakh';
+}
+
+::-webkit-scrollbar
+{
+	width: 0;
+}
+
+body{
+    background-image: url(im/back.jpg);
+    background-size: cover;
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.smooch{
+    height: 60px;
+    width: 65px;
+    margin: 10px 0 0 10px;
+    display: block;
+    background-image: url(im/smooch.webp);
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+}
+
+.smooch_text{
+    color: #4e0714;
+    font-size: small;
+    margin-left: 12vh;
+    width: 10vh;
+}
+
+.menu{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5vh;
+    background-color: rgba(243, 235, 207, 0.6);
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px #f5dfe6;
+}
+
+.game{
+    width: 40%;
+    height: 40%;
+    margin-top: 3vh;
+    display: flex;
+    position: relative;
+    box-shadow: 3px 3px 4px #ac4b67;
+    border-radius: 5vh;
+    border: none;
+    overflow: hidden;
+}
+
+.game1, .game2, .game3, .game4{
+    width: 100%;
+    height: 100%;
+    transition: transform .9s ease-in-out;
+}
+
+.game1:hover, .game2:hover, .game3:hover, .game4:hover{
+    transform: scale(1.1);
+}
+
+.game1{
+    background-image: url(im/game1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.game2{
+    background-image: url(im/game2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.game3{
+    background-image: url(im/game3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.game4{
+    background-image: url(im/game4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.back{
+    z-index: 2;
+    margin-top: 12px;
+    margin-left: -35px;
+    height: 25px;
+    width: 75px;
+    border-radius: 1.5vh;
+    border: 1px groove #4e0714;
+    background-color: #781727;
+    color: #e2b3c2;
+    text-shadow: 1px 1px 2px #f5dfe6;
+    font-weight: 500;
+}
+
+.game_text{
+    margin-bottom: 2vh;
+    text-align: center;
+    color:#4e0714;
+    font-weight: 500;
+    text-shadow: 3px 3px 4px #ac4b67;
+}
+
+.cur_game{
+    display:none;
+}
+
+.current_game{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 2vh;
+    overflow: hidden;
+}
+
+.current_game1{
+    height: 100%;
+    width: 100%;
+    background-image: url(im/valentine.jpg);
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.current_game2{
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: none;
+    background-image: url(w/w1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.current_game3{
+    display: none;
+}
+
+.current_game4{
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: none;
+    background-image: url(v/v1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gen{
+    z-index: 2;
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    border-radius: 1.5vh;
+    border: 1px groove #4e0725;
+    background-color: #f5dfe6;
+    color: #781727;
+    font-weight: 500;
+    margin-top: -20px;
+    right: 210px;
+    text-align: center;
+    display: none;
+}
+
+.gen1{
+    z-index: 2;
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    border-radius: 1.5vh;
+    border: 1px groove #4e0725;
+    background-color: #f5dfe6;
+    color: #781727;
+    font-weight: 500;
+    margin-top: -20px;
+    right: 210px;
+    text-align: center;
+    display: none;
+}
+
+.mus{
+    height: min-content;
+    display: none;
+    width: 50vh;
+    height: 50vh;
+}
+
+.music{
+    width: 400px;
+}
+
+@media (max-width: 2360px){
+   
+    .smooch{
+        height: 150px;
+        width: 150px;
+    }
+    
+    .smooch_text{
+        font-size: 50px;
+        width: 20vh;
+    }
+    
+    .menu{
+        height: 1200px;
+        width: 1200px;
+        margin: auto;
+        margin-top: 170px;
+    }
+
+    .back{
+        margin-top: 12px;
+        margin-left: -35px;
+        height: 75px;
+        width: 225px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .current_game{
+        height: 1000px;
+        width: 1000px;
+    }
+
+    .game_text{
+        margin-bottom: 2vh;
+        font-size: 50px;
+    }
+
+    .gen{
+        height: 75px;
+        width: 300px;
+        margin-top: -20px;
+        font-size: 30px;
+        right: 450px;
+        bottom: 17px;
+    }
+
+    .gen1{
+        height: 75px;
+        width: 300px;
+        margin-top: -20px;
+        font-size: 30px;
+        right: 450px;
+        bottom: 17px;
+    }
+
+    .mus{
+        margin: auto;
+    }
+}
+
+@media (max-width: 1640px){
+   
+    .smooch{
+        height: 150px;
+        width: 150px;
+    }
+    
+    .smooch_text{
+        font-size: 50px;
+        width: 20vh;
+        margin-left: 200px;
+    }
+    
+    .menu{
+        height: 1200px;
+        width: 1200px;
+        margin: auto;
+        margin-top: 580px;
+    }
+
+    .back{
+        margin-top: 12px;
+        margin-left: -35px;
+        height: 75px;
+        width: 225px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .current_game{
+        height: 1000px;
+        width: 1000px;
+    }
+
+    .game_text{
+        margin-bottom: 2vh;
+        font-size: 50px;
+    }
+
+    .gen{
+        height: 75px;
+        width: 300px;
+        margin-top: -20px;
+        font-size: 30px;
+        right: 450px;
+        bottom: 17px;
+    }
+
+    .gen1{
+        height: 75px;
+        width: 300px;
+        margin-top: -20px;
+        font-size: 30px;
+        right: 450px;
+        bottom: 17px;
+    }
+
+    .mus{
+        margin: auto;
+    }
+}
+
+@media (max-width: 1366px){
+    .smooch{
+        height: 60px;
+        width: 65px;
+    }
+    
+    .smooch_text{
+        font-size: small;
+        width: 10vh;
+    }
+
+    .menu{
+        height: 500px;
+        width: 500px;
+        margin: auto;
+        margin-top: 70px;
+    }
+    
+    .back{
+        margin-top: 12px;
+        margin-left: -35px;
+        height: 25px;
+        width: 75px;
+        font-weight: 500;
+    }
+    
+    .current_game{
+        height: 400px;
+        width: 400px;
+    }
+
+    .game_text{
+        margin-bottom: 2vh;
+    }
+
+    
+    .gen{
+        height: 30px;
+        width: 80px;
+        margin-top: -20px;
+        right: 210px;
+    }
+
+    .gen1{
+        height: 30px;
+        width: 80px;
+        margin-top: -20px;
+        right: 210px;
+    }
+}
+
+@media (max-width: 1080px){
+      
+    .smooch{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .smooch_text{
+        font-size: 50px;
+        width: 20vh;
+        margin-left: 220px;
+    }
+    
+    .menu{
+        height: 1200px;
+        width: 900px;
+        margin: auto;
+        margin-top: 420px;
+    }
+
+    .back{
+        margin-top: 40px;
+        margin-left: -5px;
+        height: 75px;
+        width: 225px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .current_game{
+        height: 1300px;
+        width: 800px;
+    }
+
+    .game_text{
+        margin-top: 2vh;
+        margin-bottom: -2vh;
+        font-size: 50px;
+    }
+
+    .gen{
+        height: 75px;
+        width: 300px;
+        margin-top: -20px;
+        font-size: 30px;
+        right: 300px;
+        bottom: 17px;
+    }
+
+    .gen1{
+        height: 75px;
+        width: 300px;
+        margin-top: -20px;
+        font-size: 30px;
+        right: 300px;
+        bottom: 17px;
+    }
+
+    .current_game1{
+        margin-top: 100px;
+        margin-left: 50px;
+        height: 700px;
+        width: 700px;
+        border-radius: 50px;
+    }
+
+    .current_game2{
+        margin-top: 100px;
+        margin-left: 50px;
+        height: 700px;
+        width: 700px;
+        border-radius: 50px;
+    }
+
+    .current_game3{
+        margin-top: 100px;
+        margin-left: 50px;
+        height: 700px;
+        width: 700px;
+        border-radius: 50px;
+    }
+
+    .current_game4{
+        margin-top: 100px;
+        margin-left: 50px;
+        height: 700px;
+        width: 700px;
+        border-radius: 50px;
+    }
+
+    .mus{
+        margin: auto;
+        margin-top: 70px;
+        height: 800px;
+    }
+
+    
+}
