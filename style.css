@@ -153,3 +153,21 @@ section
 {
 	width: 0;
 }
+
+@media (max-width: 415px){
+.button{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    margin-left: 35%;
+    height: 20%;
+    width: 30%;
+    font-size: 10px;
+    font-family: inherit;
+    border-radius: 20px;
+    border: none;
+    background-color: #ECD0EC;
+    text-shadow: 2px 2px 2px #BA71A2;
+    color: #7e2a43;
+}
+}
