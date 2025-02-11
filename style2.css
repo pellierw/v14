@@ -160,6 +160,8 @@ body{
 
 .current_game3{
     display: none;
+    height: 100%;
+    width: 100%;
 }
 
 .current_game4{
@@ -204,15 +206,12 @@ body{
     display: none;
 }
 
-.mus{
-    height: min-content;
-    display: none;
-    width: 50vh;
-    height: 50vh;
-}
-
 .music{
-    width: 400px;
+    height: 100%;
+    width: 100%;
+    background-image: url(im/music.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width: 1180px){
