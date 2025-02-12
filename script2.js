@@ -12,7 +12,10 @@ let we = [ 'w/w1.jpg',
     'w/w12.jpg',
     'w/w13.jpg',
     'w/w14.jpg',
-    'w/w15.jpg'
+    'w/w15.jpg',
+    'w/w16.jpg',
+    'w/w17.jpg',
+    'w/w18.jpg'
   ]
     
     function getRandomElement(arr) {
